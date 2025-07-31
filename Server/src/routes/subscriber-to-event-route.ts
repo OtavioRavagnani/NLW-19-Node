@@ -1,13 +1,13 @@
-import z from "zod";
-import { FastifyPluginAsyncZod } from "fastify-type-provider-zod";
+import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
+import z from 'zod'
 
-export const subscribeToEventRoute: FastifyPluginAsyncZod = async (app) => {
+export const subscribeToEventRoute: FastifyPluginAsyncZod = async app => {
   app.post(
-    "/subscriptions",
+    '/subscriptions',
     {
       schema: {
-        summary: "subscribe someone to event",
-        tags: ["subscription"],
+        summary: 'subscribe someone to event',
+        tags: ['subscription'],
         body: z.object({
           name: z.string().optional(),
           email: z.string().email(),
@@ -21,12 +21,12 @@ export const subscribeToEventRoute: FastifyPluginAsyncZod = async (app) => {
       },
     },
     async (request, reply) => {
-      const { name, email } = request.body;
+      const { name, email } = request.body
 
       return reply.status(201).send({
         name,
         email,
-      });
+      })
     }
-  );
-};
+  )
+}
