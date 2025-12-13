@@ -5,3 +5,7 @@ Content-Type: application/json
     "name": "Otavio Ravagnani",
     "email": "otavioravagnani@email.com" 
 }
+
+###
+
+GET http://localhost:3333/invite/otavio-ravagnani-1234
