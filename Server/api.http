@@ -2,10 +2,13 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Otavio Ravagnani",
+    "name": "otavio-ravagnani",
     "email": "otavioravagnani@email.com" 
 }
 
 ###
 
-GET http://localhost:3333/invite/otavio-ravagnani-1234
+GET http://localhost:3333/invite/otavio-ravagnani
+
+###
+GET http://localhost:3333/subscribers/otavio-ravagnani/ranking/clicks
