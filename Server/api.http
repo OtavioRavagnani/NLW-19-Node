@@ -2,8 +2,8 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "soffia2",
-    "email": "soffia2@email.com",
+    "name": "soffia4",
+    "email": "soffia4@email.com",
     "referrer": "46a47061-4e87-4e5f-aaba-f73699d53808"
 }
 
@@ -17,3 +17,7 @@ GET http://localhost:3333/subscribers/46a47061-4e87-4e5f-aaba-f73699d53808/ranki
 ###
 
 GET http://localhost:3333/subscribers/46a47061-4e87-4e5f-aaba-f73699d53808/ranking/count
+
+###
+
+GET http://localhost:3333/ranking
