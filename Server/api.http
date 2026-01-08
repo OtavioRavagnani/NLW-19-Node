@@ -4,6 +4,7 @@ Content-Type: application/json
 {
     "name": "soffia5",
     "email": "soffia5@email.com",
+    "phone": "16991252526",
     "referrer": "642630c2-5037-4da5-a76a-fcd83121fb4e"
 }
 

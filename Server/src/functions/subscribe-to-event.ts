@@ -6,12 +6,14 @@ import { redis } from '../redis/client'
 interface SubscribeToEventParams {
     name: string
     email: string
+    phone: string
     referrerId?: string | null
 }
 
 export async function subscribeToEvent({
     name,
     email,
+    phone,
     referrerId
 }: SubscribeToEventParams) {
     const subscribers = await db
@@ -28,6 +30,7 @@ export async function subscribeToEvent({
         .values({
             name,
             email,
+            phone,
         })
         .returning()
 
